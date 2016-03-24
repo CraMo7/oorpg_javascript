@@ -20,6 +20,9 @@ describe("Hero", function(){
     var heroDefault = new Hero();
     assert.equal("The Unknown Hero", heroDefault.name);
   });
+  it("should be able to talk, saying it's name", function(){
+    assert.equal("Hello, my name is Eaglestorm.", hero.greet());
+  });
   // can't test default favFood as it selects a valid food from the Food list array randomly
-  
+
 });
